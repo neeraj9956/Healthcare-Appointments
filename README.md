@@ -8,7 +8,7 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
+bench get-app $URL_OF_THIS_REPO --branch new-develop
 bench install-app healthcare_appointments
 ```
 URL of Appointment Booking http://127.0.0.1:8000/book_appointment instead of http://127.0.0.1:8000 use your own url
