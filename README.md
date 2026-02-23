@@ -11,7 +11,7 @@ cd $PATH_TO_YOUR_BENCH
 bench get-app $URL_OF_THIS_REPO --branch develop
 bench install-app healthcare_appointments
 ```
-
+URL of Appointment Booking http://127.0.0.1:8000/book_appointment instead of http://127.0.0.1:8000 use your own url
 ### Contributing
 
 This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
