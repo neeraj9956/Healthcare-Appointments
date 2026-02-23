@@ -1,0 +1,43 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<h3>Book Healthcare Appointment</h3>
+
+<input type="text" id="patient_name" placeholder="Patient Name" class="form-control">
+<br>
+
+<input type="text" id="contact" placeholder="Contact" class="form-control">
+<br>
+
+<select id="gender" class="form-control">
+    <option value="" disabled selected>Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Transgender">Transgender</option>
+    <option value="Other">Other</option>
+    <option value="Prefer Not to Say">Prefer Not to Say</option>
+</select>
+<br>
+
+<select id="service" class="form-control">
+    <option value="" disabled selected>Select Service</option>
+</select>
+<br>
+
+<input type="date" id="date" class="form-control">
+<br>
+
+<input type="time" id="time" class="form-control">
+<br>
+
+<p>Estimated End Time: <span id="end"></span></p>
+<p>Total Amount: ₹<span id="amount"></span></p>
+
+<button class="btn btn-primary" onclick="submit_booking()">Book</button>
+
+{% endblock %}
+
+{% block script %}
+<script src="/assets/healthcare_appointments/js/book_appointment.js"></script>
+{% endblock %}

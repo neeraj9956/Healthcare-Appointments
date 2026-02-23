@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PA-.YYYY.-.########",
+ "creation": "2026-02-22 23:55:08.932637",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0e4o",
+  "amended_from",
+  "patient_name",
+  "gender",
+  "column_break_pd7k",
+  "patient_contact",
+  "column_break_fdns",
+  "patient_email",
+  "section_break_0evb",
+  "appointment_date",
+  "column_break_iozl",
+  "appointment_time",
+  "column_break_kj9j",
+  "service",
+  "section_break_cuwc",
+  "estimated_end_time",
+  "column_break_d1w5",
+  "total_amount",
+  "column_break_uq2r",
+  "status",
+  "column_break_0uup",
+  "sales_invoice"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0e4o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient Appointments",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pd7k",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Contact",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fdns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_email",
+   "fieldtype": "Data",
+   "label": "Patient Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "section_break_0evb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_iozl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Appointment Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kj9j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Healthcare Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_cuwc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estimated_end_time",
+   "fieldtype": "Time",
+   "label": "Estimated End Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_d1w5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uq2r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "column_break_0uup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-23 23:18:11.523265",
+ "modified_by": "Administrator",
+ "module": "Healthcare Appointments",
+ "name": "Patient Appointments",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
